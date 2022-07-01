@@ -8,7 +8,6 @@ public class LoginTest extends Base {
 
     @Test
     public void loginTest() {
-        driver.get(url);
         LoginPage loginPage = new LoginPage(driver);
         loginPage.clickLogin(userName, password);
 
