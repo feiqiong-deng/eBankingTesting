@@ -17,7 +17,12 @@ public class HomePage {
     @FindBy(how = How.LINK_TEXT, using = "Log out")
     WebElement logoutLink;
 
+    @FindBy(how = How.LINK_TEXT, using = "New Customer")
+    WebElement addNewCustomer;
+
     public void clickLogout() {
         logoutLink.click();
     }
+
+    public void clickAddNew() {addNewCustomer.click();}
 }
